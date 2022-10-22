@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class avrg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+		int value, count, sum;
+		double avg;
+		count = 0;
+		sum = 0;
+		avg = 0;
+		
+		while(true) {
+			System.out.println("정수를 입력해주세요");
+			value = s.nextInt();
+			
+			if(value == 0) break;
+			count++;
+			sum += value;
+		}
+		s.close();
+		avg = sum / count;
+		System.out.println("입력한 개수는 "+count +"개 이고" + "평균은" +avg +"입니다.");
+	}
+}

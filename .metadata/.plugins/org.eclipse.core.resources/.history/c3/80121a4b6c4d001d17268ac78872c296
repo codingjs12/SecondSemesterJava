@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Floor {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("몇층인지입력하세요");
+		
+		int floor = s.nextInt();
+		int fr = floor * 5;
+		System.out.println(fr);
+		
+		s.close();
+	}
+}

@@ -1,0 +1,14 @@
+
+public class avrg {
+
+	public static void main(String[] args) {
+	int result = 0;
+	
+		for(int first=0; first < 10; first++) {
+			
+			for(int second=0; second <10; second++) {
+				System.out.print(first + "*" + second +"="+result);
+			}
+		}
+	}
+}

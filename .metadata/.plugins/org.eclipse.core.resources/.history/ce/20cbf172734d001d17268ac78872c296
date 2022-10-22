@@ -1,0 +1,44 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class Week {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		String day[] = {"월","화","수","목","금","토","일"};
+		int value;
+		try {
+			while(true) {
+			System.out.println("정수를 입력하세요");
+			value = s.nextInt();
+			
+			if(value < 0) 
+				break;
+			if(value % 7 == 0)
+				System.out.println("월");
+			if(value % 7 == 1)
+				System.out.println("화");
+			if(value % 7 == 2)
+				System.out.println("수");
+			if(value % 7 == 3)
+				System.out.println("목");
+			if(value % 7 == 4)
+				System.out.println("금");
+			if(value % 7 == 5)
+				System.out.println("토");
+			if(value % 7 == 6)
+				System.out.println("일");
+				}
+			}
+		
+			catch(InputMismatchException e) {
+				System.out.println("잘못입력");
+			}
+			
+			finally {
+				s.close();
+			}
+		}
+	}
+}

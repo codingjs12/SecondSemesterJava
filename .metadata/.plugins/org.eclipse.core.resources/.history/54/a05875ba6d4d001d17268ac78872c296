@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Floor {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		String grade;
+		System.out.println("학점을 입력하세요");
+		switch(grade = s.next()) {
+		case "A":
+		case "B":
+		System.out.println("Excellent");
+		break;
+		case "C":
+		case "D":
+		System.out.println("Good");
+		break;
+		case "F":
+		System.out.println("Bye");
+		break;
+		default:
+		System.out.println("잘못입력");
+		break;
+		}
+		
+		
+
+		
+		s.close();
+	}
+}

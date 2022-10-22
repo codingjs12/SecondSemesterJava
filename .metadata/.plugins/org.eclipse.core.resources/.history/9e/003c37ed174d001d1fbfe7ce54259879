@@ -1,0 +1,31 @@
+
+public class Song {
+	
+		String color;
+		String gearType;
+		int door;
+		
+
+	Song(String color, String gearType, int door) {
+		this.color = color;
+		this.gearType = gearType;
+		this.door = door;
+		
+	}
+	Song() {
+		color = "white";
+		gearType = "auto";
+		door = 4;
+	}
+
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Song myCar = new Song();
+		System.out.print(myCar.color);
+	}
+
+}
+

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Book {
+	String title;
+	String author;
+	
+	public Book(String title) { // 생성자
+		this.title = title;
+		author = "작자미상";
+	}
+	
+	public Book(String title, String author) { // 생성자
+		this.title = title;
+		this.author = author;
+	}
+	public Book() {
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		
+		Book [] Array = new Book[4];
+		for(int i = 0; i < 2; i++) {
+			
+		System.out.print("제목:");
+		Array[i].title = s.next();
+		
+		System.out.print("저자:");
+		Array[i].author = s.next();
+		
+		System.out.println(Array[i].title);
+		System.out.println(Array[i].author);
+		s.close();
+		}
+	}
+}
